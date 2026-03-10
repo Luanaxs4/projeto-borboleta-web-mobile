@@ -3,6 +3,8 @@ Integrantes:
 - Pedro Lucas Câmara Rodrigues Lopes - 10753510
 - Luana de Paiva Brito - 10750121
 - Louisy Dalchiavon Tomazi - 10755895
+- Murilo Arevalo - 10743851
+- Victor Pereira - 10755205
 
 ## Sumário
 - Introdução / Ideação
