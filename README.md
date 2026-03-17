@@ -36,17 +36,17 @@ Visto a dificuldade de locomoção dessas pessoas, a falta dessas informações 
 
 ### 3. Galeria
 
-*    A galeria foi estruturada utilizando duas `<sections>`: uma principal, responsável por separar essa área das demais seções do site, e outra interna, destinada à organização e exibição das imagens.
+*    A galeria foi estruturada utilizando duas `<section>`: uma principal, responsável por separar essa área das demais seções do site, e outra interna, destinada à organização e exibição das imagens.
 
 ### 4. Eventos
-*    A seção de eventos foi organizada com uma `<sections>` principal que engloba todo o conteúdo. Dentro dela, há uma `<sections>` secundária responsável por estruturar as informações dos eventos. Cada evento é representado por uma `<sections>` própria, contendo duas subdivisões: uma para o conteúdo informativo (texto) e outra para a exibição da imagem correspondente.
+*    A seção de eventos foi organizada com uma `<section>` principal que engloba todo o conteúdo. Dentro dela, há uma `<section>` secundária responsável por estruturar as informações dos eventos. Cada evento é representado por uma `<section>` própria, contendo duas subdivisões: uma para o conteúdo informativo (texto) e outra para a exibição da imagem correspondente.
 
 ### 5. Depoimentos dos Eventos
-*    A área de depoimentos foi estruturada com uma `<sections>` principal. Em seu interior, há uma `<sections>` dedicada à organização dos comentários.
+*    A área de depoimentos foi estruturada com uma `<section>` principal. Em seu interior, há uma `<section>` dedicada à organização dos comentários.
 Cada depoimento é composto por uma section individual, que contém duas partes: uma para a imagem do usuário e outra para o comentário, acompanhado do nome da pessoa.
 
 ### 6. Locais
-*    A seção de locais foi organizada com uma `<sections>` principal. Dentro dela, há duas subdivisões: uma `<sections>` destinada ao título e ao texto informativo, e outra voltada para a exibição da imagem correspondente.
+*    A seção de locais foi organizada com uma `<section>` principal. Dentro dela, há duas subdivisões: uma `<section>` destinada ao título e ao texto informativo, e outra voltada para a exibição da imagem correspondente.
 
 ### 7. Rodapé
-*    O rodapé foi estruturado utilizando duas `<sections>`: uma destinada à exibição da logo e de um texto descritivo, e outra dedicada à apresentação dos nomes dos desenvolvedores.
+*    O rodapé foi estruturado utilizando duas `<section>`: uma destinada à exibição da logo e de um texto descritivo, e outra dedicada à apresentação dos nomes dos desenvolvedores.
