@@ -2,6 +2,15 @@
     margin:0;
 }
 
+#galeria h1, #sobre-nos h1{
+    font-size: 2.8rem;
+}
+
+#sobre-nos p, #galeria p{
+    font-size: 1rem;
+    color: #909090;
+}
+
 #introducao{
     background-color: #5e5e5e;
     color: #ffffff;
@@ -38,27 +47,112 @@
 
 #eventos{
     width: 60%;
-    background-color: blue;
+    margin: 0 20%;
+    padding-top: 4.5rem;
+}
+
+#eventos p{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #909090;;
+}
+
+#eventos h1{
+    margin-bottom: 2rem;
+}
+
+#eventos h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#eventos button{
+    background-color: transparent;
+    font-size: 1rem;
+    border: none;
+    font-weight: bold;
+    color: #232271;
+}
+
+#eventos button:hover{
+    color: #4744e5;
+    cursor: pointer;
 }
 
 .card_evento{
     display: flex;
-    background-color: blueviolet;
-    text-align: center;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .escrita_card_evento{
-    flex: 70%;
-    background-color: aqua;
+    flex: 55%;
+    text-align: justify;
+    padding: 2%;
 }
 
 .img_card_evento{
-    flex: 30%;
-    background-color: brown;
+    flex: 45%;
 }
 
-.img_evento{
-    width: 100px;
+.img_evento, #eventos-comentarios img{
+    width: 100%;
+}
+
+#eventos-comentarios h1, #eventos h1{
+    font-size: 2.8rem;
+}
+
+#eventos-comentarios{
+    width: 100%;
+    text-align: center;
+    background-color: #2d2c55;
+    padding: 3rem 0;
+}
+
+#eventos-comentarios h1{
+    color: white;
+    margin-bottom: 2rem;
+}
+
+#flex_comentarios{
+    display: flex;
+    width: 60%;
+    margin: 0 20%;
+    align-content: space-between;
+}
+
+.card_comentarios{
+    flex: 33%;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    border: 0.1rem solid #d3d3d3;
+    border-radius: 12%;
+}
+
+.img_comentarios{
+    flex: 30%;
+    padding: 0.5rem;
+}
+
+.img_comentarios img{
+    width: 100%;
+    height:4rem;
+    clip-path: ellipse(50% 50%);
+}
+
+.escrita_comentarios{
+    flex: 70%;
+    text-align: justify;
+    padding: 0.5rem;
+}
+
+.escrita_comentarios p{
+    font-size: 1.05rem;
+    color: #d3d3d3;
 }
 
 #locais {
@@ -88,7 +182,7 @@
 }
 
 #locais p {
-    color: #9ba8b8;
+    color: #909090;;
     line-height: 1.6;
     font-size: 1.05rem;
 }
