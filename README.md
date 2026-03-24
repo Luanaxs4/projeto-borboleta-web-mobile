@@ -28,8 +28,10 @@ Visto a dificuldade de locomoção dessas pessoas, a falta dessas informações 
 ## Tutorial do Codigo
 ---
 
-### 1. Cabeçalho do Site (Header)
-*   **Menu de Navegação:** Implementado via `<nav>` dentro do `<header>`, contém os links de ancoragem e navegação externa.
+## 1. Cabeçalho do Site (Header)
+
+* **Menu de Navegação:** Implementado via `<nav>` dentro do `<header>`, contém links de ancoragem e navegação externa. No processo de estilização, separamos uma `<section>` para a logo, outra para o menu em telas maiores e mais uma para telas com largura de, no máximo, 900px. No arquivo `style.css`, foi utilizado o conceito de Flexbox para organizar os blocos do menu, e o menu responsivo já foi implementado por meio de `@media` e JavaScript.
+Para que a responsividade funcione, foi adicionada a tag `<button onclick="menuShow()"><img class="icon" src="imagens/menu.svg"></button>`. Assim, ao clicar nesse botão, a função `menuShow()` é chamada e exibe a navegação horizontal.
 
 ### 2. Introdução
 *    A seção de introdução foi desenvolvida para apresentar as principais informações da instituição. Além disso, contém um botão que direciona o usuário para a área de agendamento de conserto de equipamentos de deficientes visuais.
