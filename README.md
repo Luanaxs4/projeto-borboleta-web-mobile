@@ -30,8 +30,61 @@ Visto a dificuldade de locomoção dessas pessoas, a falta dessas informações 
 
 ## 1. Cabeçalho do Site (Header)
 
-* **Menu de Navegação:** Implementado via `<nav>` dentro do `<header>`, contém links de ancoragem e navegação externa. No processo de estilização, separamos uma `<section>` para a logo, outra para o menu em telas maiores e mais uma para telas com largura de, no máximo, 900px. No arquivo `style.css`, foi utilizado o conceito de Flexbox para organizar os blocos do menu, e o menu responsivo já foi implementado por meio de `@media` e JavaScript.
-Para que a responsividade funcione, foi adicionada a tag `<button onclick="menuShow()"><img class="icon" src="imagens/menu.svg"></button>`. Assim, ao clicar nesse botão, a função `menuShow()` é chamada e exibe a navegação horizontal.
+* **Menu de Navegação:** Implementado via `<nav>` dentro do `<header>`, contém links de ancoragem e navegação externa. No processo de estilização, separamos uma `<section>` para a logo, outra para o menu em telas maiores e mais uma para telas com largura de, no máximo, 900px. Abaixo esta a separação das seções
+
+```html
+ <header>
+        <nav class="menu">
+            <section class="logo">
+            </section>
+            <section class="menu-list">
+            </section>
+            <section class="menu-btn">
+            </section>
+            <section class="mobile-menu-icon">
+            </section>
+        </nav>
+        <section class="mobile-menu ">
+            
+            <section class="menu-btn">
+            </section>
+        </section>
+    </header>
+```
+
+
+*  No arquivo `style.css`, foi utilizado o conceito de Flexbox para organizar os blocos do menu, e o menu responsivo já foi implementado por meio de `@media` e JavaScript.
+```css
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+@media (max-width: 900px){...}
+```
+*  Para que a responsividade funcione, foi adicionada a tag `<button onclick="menuShow()"><img class="icon" src="imagens/menu.svg"></button>`. Assim, ao clicar nesse botão, a função `menuShow()` é chamada e exibe a navegação horizontal.
+```html
+<section class="mobile-menu-icon">
+  <button onclick="menuShow()"><img class="icon" src="imagens/menu.svg"></button>
+</section>
+```
+
+```javascript
+function menuShow(){
+    let menuMobile = document.querySelector('.mobile-menu');
+    if (menuMobile.classList.contains('open')){
+        menuMobile.classList.remove('open');
+        document.querySelector('.icon').src = "imagens/menu.svg"
+
+    }else{
+        menuMobile.classList.add('open');
+        document.querySelector('.icon').src = "imagens/close.svg"
+    }
+}
+```
+
+
 
 ### 2. Introdução
 *    A seção de introdução foi desenvolvida para apresentar as principais informações da instituição. Além disso, contém um botão que direciona o usuário para a área de agendamento de conserto de equipamentos de deficientes visuais.
