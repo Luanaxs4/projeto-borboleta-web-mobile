@@ -62,7 +62,19 @@
     font-weight: 600;
     font-size: 1.1rem;
 }
+/*Sobre Nos*/
+#sobre-nos{
+    display: flex;
+    margin: 0 25rem;
+}
 
+#texto-sobre-nos{
+    padding: 1rem 2rem;
+}
+#texto-sobre-nos p{
+    margin: 1rem;
+    text-align: justify;
+}
 
 /*--MENU---*/
 
