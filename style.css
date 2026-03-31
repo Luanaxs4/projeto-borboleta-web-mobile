@@ -440,27 +440,23 @@ hr {
 .galeria-imgs {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 4rem;
     width: 100%;
-    height: 800px;
 }
 
 .galeria-imgs img {
+    width: 100%;
     background-color: rgb(221, 228, 235);
     content: "";
     object-fit: cover;
     border-radius: 2rem;
 }
 
-.galeria-imgs img:nth-child(1),
-.galeria-imgs img:nth-child(2) {
-    grid-column-end: span 2;
-}
+
 
 
 @media (max-width: 900px) {
-
     /*-------------------------menu-----------------------*/
     .menu {
         padding: 1.5rem 4rem;
