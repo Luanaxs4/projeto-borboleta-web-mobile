@@ -96,6 +96,25 @@ function menuShow(){
 ### 4. Eventos
 *    A seção de eventos foi organizada com uma `<section>` principal que engloba todo o conteúdo. Dentro dela, há uma `<section>` secundária responsável por estruturar as informações dos eventos. Cada evento é representado por uma `<section>` própria, contendo duas subdivisões: uma para o conteúdo informativo (texto) e outra para a exibição da imagem correspondente.
 *    Na etapa de estilização, as sectios foram nomeadas de forma intuitiva com o elemento `class`, com excessão da `<section>` principal que foi nomeada com `#eventos`, além disso, foi implementada uma `flexbox` em cada "card" de evento (`.card_evento`) da seção para organizar os conteúdos visuais (`.img_card_evento`) e textuais (`.escrita_card_evento`).
+*    Foi empregada a função `revelaTxt(btn)` no botão "Leia mais"/"Leia menos". A tela inicialmente mostra um texto de amostra dos eventos, ao clicar no botão, ele mostra o evento/notícia completa na página.
+```javascript
+   <button onclick="revelaTxt(this)">Ver mais</button>
+```
+```javascript
+   function revelaTxt(btn){
+    let sect = btn.parentElement;
+    let sectAmostra = sect.querySelector(".amostra");
+    let sectHide = sect.querySelector(".hide");
+
+    //para o programa pegar o status da tela, e não o q é atribuido no código
+    let status = window.getComputedStyle(sectHide).display !== "none"; //bool
+
+    sectHide.style.display = (status)? "none":"block";
+    sectAmostra.style.display = (sectHide.style.display == "none")? "block":"none";
+
+    btn.textContent = (btn.textContent == "Ver mais")? "Ver menos":"Ver mais";
+}
+```
 
 ### 5. Depoimentos dos Eventos
 *    A área de depoimentos foi estruturada com uma `<section>` principal. Em seu interior, há uma `<section>` dedicada à organização dos comentários.
