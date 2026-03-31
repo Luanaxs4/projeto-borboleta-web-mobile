@@ -95,7 +95,7 @@ function menuShow(){
 
 ### 4. Eventos
 *    A seção de eventos foi organizada com uma `<section>` principal que engloba todo o conteúdo. Dentro dela, há uma `<section>` secundária responsável por estruturar as informações dos eventos. Cada evento é representado por uma `<section>` própria, contendo duas subdivisões: uma para o conteúdo informativo (texto) e outra para a exibição da imagem correspondente.
-*    Na etapa de estilização, as sectios foram nomeadas de forma intuitiva com o elemento `class`, com excessão da `<section>` principal que foi nomeada com `#eventos`, além disso, foi implementada uma `flexbox` em cada "card" de evento (`.card_evento`) da seção para organizar os conteúdos visuais (`.img_card_evento`) e textuais (`.escrita_card_evento`)
+*    Na etapa de estilização, as sectios foram nomeadas de forma intuitiva com o elemento `class`, com excessão da `<section>` principal que foi nomeada com `#eventos`, além disso, foi implementada uma `flexbox` em cada "card" de evento (`.card_evento`) da seção para organizar os conteúdos visuais (`.img_card_evento`) e textuais (`.escrita_card_evento`).
 
 ### 5. Depoimentos dos Eventos
 *    A área de depoimentos foi estruturada com uma `<section>` principal. Em seu interior, há uma `<section>` dedicada à organização dos comentários.
